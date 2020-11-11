@@ -1,0 +1,18 @@
+version: '3'
+services:
+        myapp:
+            image: ubuntu
+            volumes:
+                - my_vol:/home/vol1
+            ports:
+                - 8080:8080
+
+        myapp2:
+             image: ngnix
+             ports:
+                - 8081:80
+
+volumes:
+      my_vol:
+           driver: local             
+        

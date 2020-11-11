@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+WORKDIR /tmp
+RUN apt-get update -y
+RUN apt-get install -y ngnix:latest
+MAINTAINER charan
+EXPOSE 80 443
